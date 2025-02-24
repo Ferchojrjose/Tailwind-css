@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/output.css" rel="stylesheet">
+    <title>Tailwind Grid</title>
+</head>
+
+<body class="bg-blue-100 py-10">
+
+    <!-- Grid:  posiciona los elementos en filas o columnas -->
+    <!-- Gap:   Define un espacio entre filas y columnas -->
+    <section
+        class="bg-amber-200 h-screen w-[50%] mx-auto max-w-screen-lg grid gap-2 auto-rows-max justify-items-center items-center md:grid-cols-2">
+
+        <!-- aspect-sqare: poner un tamaño de cuadro mismo alto y ancho -->
+        <!-- rounded-full: redondear la imagen -->
+        <!-- max-w-sm: un ancho maximo de 384 px -->
+        <img src="./assets/perro.jpg" class="aspect-square object-cover rounded-full max-w-sm w-4/5">
+
+        <article class="px-8 py-4 grid gap-6">
+
+            <h1 class="text-3xl font-bold text-center md:text-left md:text-5xl ">
+                Mi nombre es Sissy, ¿Me puedo unir a tu vida?
+            </h1>
+
+            <p class="leading-7 text-gray-600">Lorem ipsum dolor sit amet, consectetur adipicing elit. Excepturi quis
+                quae odit possimus</p>
+
+            <a href="#"
+                class="bg-blue-700 text-white text-center py-6 rounded-xl font-bold hover:scale-110 transition-transform">¡Adóptame!</a>
+
+        </article>
+
+    </section>
+
+</body>
+
+</html>
